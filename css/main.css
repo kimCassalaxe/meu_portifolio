@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Black" serif;
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  background-color: #1f1e1ef1;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+  padding: 20px 0px;
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  font: 20px normal;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin:40px 20px;
+}
+ul li a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 21px;
+}
+.ola{
+  font-size: 22px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.692);
+  top: 30px;
+}
+.Titulo{
+  font-size: 60px;
+  position: relative;
+  top: 30px;
+}
+img{
+  border: 3px solid rgba(255, 255, 255, 0.678);
+}
+.chamada{
+  position: relative;
+  bottom: 200px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(224, 224, 224);
+  text-align: center;
+}
+.tbnMeuW{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+  padding: 20px 40px;
+  margin: 20px;
+  border: none;
+  border-radius: 6px;
+}
+main{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding:30px 0px ;
+}
+.sobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.texto{
+  width: 50%;
+  font-size: 20px;
+  color: rgb(182, 182, 182);
+  text-align: center;
+  padding: 10px;
+}
+.subT{
+  text-align:left;
+}
+.me{
+  text-align: left;
+  font-size: 70px;
+  color: rgb(226, 226, 226);
+}
+
+.btnW{
+  margin:40px 10px ;
+  padding: 17px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f1e1ef1;
+  border: none;
+  border-radius:6px ;
+}
+.btnRM{
+  margin:10px;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(182, 182, 182);
+  background-color: #2b2a2a00;
+  border:solid 2px rgb(182, 182, 182);;
+  border-radius:6px ;
+}
+.ilustracao{
+  width: 50%;
+  padding: 20px;
+  text-align: end;
+}
+.sobreFoto{
+  width: 450px;
+}
+.sub-sobreFoto{
+  width: 350px;
+  position: relative;
+  bottom: 200px;
+  right: 300px;
+}
+section,.services{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+section,.services span,.testimonials span,.help span{
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.692);
+}
+.services h2,.project h2,.testimonials h2{
+  font-size: 70px;
+  color: rgb(226, 226, 226);
+}
+.listServ,.listProj{ 
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+section{
+  padding: 20px;
+  font-size: 25px;
+  margin: 40px 0px;
+}
+.servI i{
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 30px;
+}
+.servI p{
+  padding: 20px;
+  font-size: 19px;
+}
+.botao{
+  display: flex;
+  justify-content: end;
+  margin: 30px 0px;
+}
+.botao button{
+  padding: 10px;
+}
+.btnRM :hover{
+  background-color:#2b2a2a;
+  cursor: pointer;
+
+}
+.projI{
+  padding: 20px 0px;
+}
+.projI figure img{
+  width: 350px;
+  height:380px;
+  border: 2px solid #222222;
+  box-shadow: 0px 0px 2px #131313;
+  border-radius: 10px;
+
+}
+.des{
+  margin: 10px 20px;
+  padding:10px;
+  text-align: left;
+  background-color:  #1d1c1c5e;
+  border-radius: 10px;
+}
+.des p,.comentarios p{
+  font-size: 19px;
+  padding: 10px 0px;
+}
+.comentarios{
+  width: 600px;
+  padding: 20px 40px;
+  text-align: center;
+  background-color:  #1f1e1ef6;
+  border-radius: 10px;
+  margin: 40px auto 2px auto;
+}
+.testimonials .author {
+  margin: 20px;
+}
+.testimonials .botao{
+  margin: 0 auto;
+}
+.testimonials .botao button{
+  background-color:  #252525c4;
+  padding: 0px 20px;
+  font-size: 30px;
+  font-weight: 900;
+  border: none;
+}
+.help{
+  background-color:  #1f1e1ef6;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.help h2{
+  font-size: 40px;
+  color: rgb(226, 226, 226);
+}
+.help .btnW{
+  margin: 20px auto;
+  width: 250px;
+  font-size: 20px;
+  color: #1f1e1ef1;
+}
+footer{
+  background-color:  #1f1e1ef6;
+  width: 100%;
+}
+table{
+  margin: 20px auto;
+  text-align: left;
+  width: 1200px;
+  padding: 40px 10px;
+}
+table th{
+  font-size: 25px;
+  margin: 20px;
+}
+table tr{
+  margin: 20px;
+}
+table .tAutor{
+  width: 40%;
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+table td{
+  padding: 3px 0px;
+}
+.tAutor-con{
+  text-align: left; 
+}
+table td a{
+  text-decoration: none;
+  color: aliceblue;
+}
+h6{
+  margin: 10px;
+  font-size: 16px;
+}

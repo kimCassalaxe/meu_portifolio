@@ -1,0 +1,147 @@
+@media (max-width: 700px) {
+
+  main, footer,.sobre{
+    width: 600px;
+  }
+  .sobre,.services,.project,.help,.testimonials{
+    
+
+  }
+  
+  header,.sobre,.services .listServ,.project .listProj ,.testimonials .comentarios{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    margin:0 auto;
+    
+
+  }
+  .sobre .texto{
+    text-align: justify;
+    width: auto;
+  }
+  .sobre .ilustracao .sub-sobreFoto{
+    display: none;
+  }
+  footer table{
+    display: none;
+  }
+  
+  .ola{
+    text-align:center;
+  }
+  .Titulo{
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+  }
+  img{
+    width: 500px;
+    border: 3px solid rgba(255, 255, 255, 0.678);
+  }
+  .chamada{
+    font-size: 16px;
+    font-weight: 400;
+    top: 20px;
+    color: rgb(224, 224, 224);
+    text-align: center;
+  }
+  
+  
+}
+@media (max-width: 360px) {
+  header,main, footer,.sobre{
+    width: 310px;
+
+  }
+  
+  .help,.sobre,header,.services .listServ,.project .listProj ,.testimonials .comentarios{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sub{
+    font-size: 30px;
+  }
+  p{font-size: 17px;}
+  .imagem{
+    width: 220px;
+  }
+  .sobre .texto{
+    text-align: justify;
+    width: auto;
+  }
+  nav,.sobre .ilustracao .sub-sobreFoto{
+    display: none;
+  }
+  footer table{
+    display: none;
+  }
+  
+  .ola{
+    text-align:center;
+    position: relative;
+    top: -10px;
+  }
+  .Titulo{
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+  }
+  img{
+    width: 250px;
+    border: 3px solid rgba(255, 255, 255, 0.678);
+  }
+  .chamada{
+    font-size: 16px;
+    padding: 10px;
+    top: 20px;
+    color: rgb(224, 224, 224);
+    text-align: center;
+  }
+  .sobre{
+    display: flex;
+    width: auto;
+  }
+  .texto{
+    width: 40%;
+    font-size: 20px;
+    color: rgb(182, 182, 182);
+    text-align: center;
+  }
+  .services .sub,.project .sub,.testimonials .sub{
+    font-size: 37px;
+    text-align: center;
+  }
+  .projI figure img{
+    width: 250px;
+    height:280px;
+    border-radius: 10px;
+  
+  }
+  .testimonials .comentarios{
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .help{
+    width: 250px;
+    background-color:  #1f1e1ef6;
+    text-align: center;
+    border-radius: 10px;
+  } 
+  .help .sub{
+    font-size: 30px;
+  }
+  .help .btnW{
+    margin: 20px auto;
+    width: 200px;
+    font-size: 19px;
+    color: #1f1e1ef1;
+  }
+  h6{
+    font-size: 16px;
+  }
+}
