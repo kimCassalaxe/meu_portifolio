@@ -4,8 +4,14 @@
   font-family: "Roboto-Black" serif;
   box-sizing: border-box;
 }
+html{
+  /*para deixar o scroll suave*/
+  scroll-behavior: smooth;
+  scrollbar-width: 20px;
+  scrollbar-color: red;
+}
 body{
-  height: 100%;
+  height: 100vh;
   background-color: #1f1e1ef1;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
