@@ -1,19 +1,29 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Roboto-Black" serif;
+  font-family: 'Roboto',serif;
   box-sizing: border-box;
+}
+:root{
+  --corP:#1f1e1ef1;
+  --corS: #1f1e1ef6;
+}
+
+button{
+  cursor: pointer;
 }
 html{
   /*para deixar o scroll suave*/
   scroll-behavior: smooth;
-  scrollbar-width: 20px;
-  scrollbar-color: red;
+}
+/*para modar a aparenciado da barra de roagem*/
+body::-webkit-scrollbar{
+  color: red;
 }
 body{
-  height: 100vh;
-  background-color: #1f1e1ef1;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100%;
+  background-color: var(--corP);
+ 
   color: white;
   display: flex;
   flex-direction: column;
@@ -24,44 +34,66 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-nav{
+header>nav{
+  background-color: var(--corS);
+  height: 4.5rem;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 60px;
   padding: 20px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:9999;
 }
-ul{
+header>nav>ul{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  list-style: none;
 }
-ul li a{
+header>nav>ul>li{
+  list-style: none;
+  padding: .5rem;
+}
+header>nav>ul>li>a{
   text-decoration: none;
   color: white;
-  font: 20px normal;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin:40px 20px;
+  font-size: 1.3rem;
+  margin:.4rem;
+  transition:linear 2s;
 }
-ul li a:hover{
+header>nav>ul>li>a:hover{
   cursor: pointer;
-  text-decoration: underline;
-  font-size: 21px;
+  border-bottom:solid #fff 0.1rem;
+}
+nav>.menu-mobile,nav>#check{display: none;}
+nav>.menu-mobile{
+  font-size: 2.5rem;
+  background-color: rgba(0, 255, 255, 0);
+  margin: 1rem;
+  text-align: center;
+  
+  cursor: pointer;
+}
+header>.banner{
+  padding-top:4.5rem ;
+  text-align: center;
 }
 .ola{
   font-size: 22px;
   position: relative;
   color: rgba(255, 255, 255, 0.692);
-  top: 30px;
+  top:30px ;
 }
 .Titulo{
   font-size: 60px;
   position: relative;
   top: 30px;
 }
+.banner>img{width: 800px;}
 img{
   border: 3px solid rgba(255, 255, 255, 0.678);
 }
@@ -90,6 +122,7 @@ main{
   padding:30px 0px ;
 }
 .sobre{
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -98,7 +131,7 @@ main{
   width: 50%;
   font-size: 20px;
   color: rgb(182, 182, 182);
-  text-align: center;
+  text-align: start;
   padding: 10px;
 }
 .subT{
@@ -115,7 +148,7 @@ main{
   padding: 17px 40px;
   font-size: 20px;
   font-weight: 700;
-  color: #1f1e1ef1;
+  color: var(--corP);
   border: none;
   border-radius:6px ;
 }
@@ -128,6 +161,7 @@ main{
   background-color: #2b2a2a00;
   border:solid 2px rgb(182, 182, 182);;
   border-radius:6px ;
+  cursor: pointer;
 }
 .ilustracao{
   width: 50%;
@@ -143,10 +177,12 @@ main{
   bottom: 200px;
   right: 300px;
 }
-section,.services{
+section{
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-size: 25px;
+  margin: 50px 0px;
 }
 section,.services span,.testimonials span,.help span{
   font-size: 22px;
@@ -155,16 +191,17 @@ section,.services span,.testimonials span,.help span{
 .services h2,.project h2,.testimonials h2{
   font-size: 70px;
   color: rgb(226, 226, 226);
+  margin: 1rem 0px;
 }
 .listServ,.listProj{ 
   display: flex;
   justify-content: space-evenly;
-  
 }
-section{
-  padding: 20px;
-  font-size: 25px;
-  margin: 40px 0px;
+.servI {
+  background-color: var(--corS);
+  margin: 1.4rem 0px;
+  padding: 1rem;
+  border-radius: 5px;
 }
 .servI i{
   color: rgba(255, 255, 255, 0.692);
@@ -213,7 +250,7 @@ section{
   width: 600px;
   padding: 20px 40px;
   text-align: center;
-  background-color:  #1f1e1ef6;
+  background-color: var(--corS);
   border-radius: 10px;
   margin: 40px auto 2px auto;
 }
@@ -231,7 +268,7 @@ section{
   border: none;
 }
 .help{
-  background-color:  #1f1e1ef6;
+  background-color: var(--corS);
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -244,7 +281,7 @@ section{
   margin: 20px auto;
   width: 250px;
   font-size: 20px;
-  color: #1f1e1ef1;
+  color: var(--corP);
 }
 footer{
   background-color:  #1f1e1ef6;
@@ -255,6 +292,7 @@ table{
   text-align: left;
   width: 1200px;
   padding: 40px 10px;
+
 }
 table th{
   font-size: 25px;
@@ -271,15 +309,20 @@ table .tAutor{
 
 table td{
   padding: 3px 0px;
+  opacity: .6;
 }
 .tAutor-con{
   text-align: left; 
+  font-weight: 100;
 }
 table td a{
   text-decoration: none;
   color: aliceblue;
+  font-weight: 300;
 }
 h6{
   margin: 10px;
   font-size: 16px;
+  font-weight: 100;
+  opacity: .4;
 }

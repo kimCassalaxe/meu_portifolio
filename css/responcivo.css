@@ -1,7 +1,36 @@
-@media (max-width: 700px) {
+:root{
+  --corText:rgb(224, 224, 224);
+}
+@media (max-width: 900px) {
+  nav>.menu-desktop,.sobre>.ilustracao>.sub-sobreFoto,footer>table{
+    display: none;
+  }
+  nav>.menu-mobile{
+    display: block;
+  }
+  header>nav{
+    justify-content: space-between;
+  }
+  
 
+  nav>.menu-desktop{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corS);
+    position: relative;
+    left: 0;top: 160px;
+    display: none;
+  }
+  nav>.menu-desktop>li{
+    width: 100%;
+  }
+ 
+  nav>#check:checked+nav>.menu-desktop{
+    display: block;
+    
+  }
   main, footer,.sobre{
-    width: 600px;
+    width: 90%;
   }
   .sobre,.services,.project,.help,.testimonials{
     
@@ -9,7 +38,6 @@
   }
   
   header,.sobre,.services .listServ,.project .listProj ,.testimonials .comentarios{
-    width: 500px;
     display: flex;
     flex-direction: column;
     justify-items:center;
@@ -24,10 +52,7 @@
   .sobre .ilustracao .sub-sobreFoto{
     display: none;
   }
-  footer table{
-    display: none;
-  }
-  
+
   .ola{
     text-align:center;
   }
@@ -41,96 +66,115 @@
     border: 3px solid rgba(255, 255, 255, 0.678);
   }
   .chamada{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    top: 20px;
+    top: -40px;
     color: rgb(224, 224, 224);
     text-align: center;
   }
   
+  .sobre{
+    margin: 100px auto;
+  }
   
+  .sobre>.ilustracao{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+  .sobre>.ilustracao>.imagem{
+    width: 60%;
+  }
 }
-@media (max-width: 360px) {
+@media (max-width: 370px) {
+  nav>.menu-desktop,.sobre>.ilustracao>.sub-sobreFoto{
+    display: none;
+  }
+  header>nav{
+    justify-content: right;
+  }
+  nav>.menu-mobile{
+    display: block;
+  }
   header,main, footer,.sobre{
-    width: 310px;
-
+    width: 95%;
+    align-items: center;
   }
   
   .help,.sobre,header,.services .listServ,.project .listProj ,.testimonials .comentarios{
-    width: 280px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-  }
-  .sub{
-    font-size: 30px;
-  }
-  p{font-size: 17px;}
-  .imagem{
-    width: 220px;
-  }
-  .sobre .texto{
-    text-align: justify;
-    width: auto;
-  }
-  nav,.sobre .ilustracao .sub-sobreFoto{
-    display: none;
-  }
-  footer table{
-    display: none;
-  }
-  
+    padding: 1rem;
+  }  
   .ola{
     text-align:center;
     position: relative;
     top: -10px;
   }
   .Titulo{
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
-    top: 10px;
+    top: 20px;
+    font-weight: 500;
   }
   img{
     width: 250px;
-    border: 3px solid rgba(255, 255, 255, 0.678);
   }
   .chamada{
-    font-size: 16px;
-    padding: 10px;
     top: 20px;
-    color: rgb(224, 224, 224);
+    color: var(--corText);
     text-align: center;
   }
+  .sub{
+    font-size: 30px;
+    margin: 1.3rem 0px;
+    text-align: center;
+  }
+  p{
+    font-size: 1.4rem;
+  }
+  .sobre>.texto>.db>.btn{
+    margin:1rem 0px;
+  }
+  .imagem{
+    width: 220px;
+  }
+  
   .sobre{
     display: flex;
     width: auto;
   }
-  .texto{
-    width: 40%;
+  .sobre>.texto{
+    position: relative;
+    top: 2.5rem;
+    padding: 0px;
+    margin: 0px;
     font-size: 20px;
-    color: rgb(182, 182, 182);
-    text-align: center;
+    text-align: start;
   }
   .services .sub,.project .sub,.testimonials .sub{
     font-size: 37px;
     text-align: center;
   }
+  .services>.listServ>.servI{
+    margin-top: 1.4rem;
+  }
+  .project>.botao{
+    margin-top: 0px;
+  }
   .projI figure img{
-    width: 250px;
-    height:280px;
     border-radius: 10px;
-  
+    width: 99%;
   }
   .testimonials .comentarios{
-    width: 220px;
-    padding: 10px;
     text-align: center;
     border-radius: 10px;
   }
   .help{
-    width: 250px;
-    background-color:  #1f1e1ef6;
     text-align: center;
-    border-radius: 10px;
   } 
   .help .sub{
     font-size: 30px;
@@ -139,7 +183,9 @@
     margin: 20px auto;
     width: 200px;
     font-size: 19px;
-    color: #1f1e1ef1;
+  }
+  footer table{
+    display: none;
   }
   h6{
     font-size: 16px;

@@ -13,7 +13,9 @@
 <body>
   <header id="home">
     <nav>
-      <ul>
+      <label for="check" class="menu-mobile" id="menu-mobile">&#9776;</label>
+      <input type="checkbox" id="check">
+      <ul class="menu-desktop" id="menu-desktop">
         <li><a href="#home">Home</a></li>
         <li><a href="#sobre">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -22,17 +24,19 @@
         <li><a href="#help">Contact</a></li>
       </ul>
     </nav>
-    <p class="ola">Hello, this is</p>
-    <h1 class="Titulo">Kim Cassalaxe</h1>
-    
-    <figure>
-      <img src="/imagens/A10.jpg" alt="meu perfil">
-    </figure>
-    <div class="chamada">
-      <p>I working an a freelance bwe disign end <br>
-        devaloper for 4 year. I love to design end <br>
-        make new expiriences for the peuple </p>
-      <input type="button" class="tbnMeuW" value="See my works">
+    <div class="banner">
+      <p class="ola">Hello, this is</p>
+      <h1 class="Titulo">Kim Cassalaxe</h1>
+      
+      <figure>
+        <img src="/imagens/A10.jpg" alt="meu perfil">
+      </figure>
+      <div class="chamada">
+        <p>I working an a freelance bwe disign end <br>
+          devaloper for 4 year. I love to design end <br>
+          make new expiriences for the peuple </p>
+        <input type="button" class="tbnMeuW" value="See my works">
+      </div>
     </div>
     
   </header >
@@ -41,10 +45,10 @@
       <div class="texto">
         <p class="subT">Let me introduce myself</p>
         <h2 class="sub me">ABOUT ME</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl. Aliquam sit amet diam ac quam dignissim lobortis vel ac sapien. Proin placerat cursus risus. Duis blandit varius hendrerit. </P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl. Aliquam sit amet diam ac quam dignissim lobortis vel ac sapien. </P>
         <div class="db">
-          <input type="button" class="btnW" value="Works">
-          <input type="button"class="btnRM" value="Read More">
+          <input type="button" class="btnW btn" value="Works">
+          <input type="button"class="btnRM btn" value="Read More">
         </div>
       </div>
       <div class="ilustracao">
@@ -56,21 +60,21 @@
       <span>What i will do for you</span>
       <h2 class="sub">SERVICES</h2>
       <div class="listServ">
-      <div class="web-design servI">
-        <i class="fi-rr-computer"></i>
-        <h3>web design</h3>
-        <p>I do UI/UX design for the website that helt websutee to get a unique look.</p>
-      </div>
-      <div class="web-design servI">
-        <i class="fi-rr-palette"></i>
-        <h3>web Dev</h3>
-        <p>I do UI/UX design for the website that helt websutee to get a unique look.</p>
-      </div>
-      <div class="web-design servI">
-        <i class="fi-rr-mobile"></i>
-        <h3>app Dev</h3>
-        <p>I do UI/UX design for the website that helt websutee to get a unique look.</p>
-      </div>
+        <div class="web-design servI">
+          <i class="fi-rr-computer icon"></i>
+          <h3>web design</h3>
+          <p>I do UI/UX design for the website that helt websutee to get a unique look.</p>
+        </div>
+        <div class="web-design servI">
+          <i class="fi-rr-palette icon"></i>
+          <h3>web Dev</h3>
+          <p>I do UI/UX design for the website that helt websutee to get a unique look.</p>
+        </div>
+        <div class="web-design servI">
+          <i class="fi-rr-mobile icon"></i>
+          <h3>app Dev</h3>
+          <p>I do UI/UX design for the website that helt websutee to get a unique look.</p>
+        </div>
       </div>
     </section>
     <section class="project" id="project">
@@ -155,28 +159,32 @@
         </td>
         <td><a href="#">Home</a></td>
         <td>+244937957153</td>
-        <td><a href="#">FaceBook</a></td>
+        <td><a href="#">Telegram</a></td>
       </tr>
       <tr>
         <td><a href="#">About</a></td>
-        <td><a href="#">kimcassalaxi@gmail.com</a></td>
-        <td><a href="#">Linkidn</a></td>
+        <td><a href="#kimcassalaxi@gmail.com">kimcassalaxi@gmail.com</a></td>
+        <td><a href="#https://media-exp1.licdn.com/dms/image/C4E03AQG-4eC0zrCD2A/profile-displayphoto-shrink_100_100/0/1549659587261?e=1649894400&v=beta&t=6dtTgMTmkCzZKEzpmrchBdo4yBobx9jBqXyGoECEk-w">Linkidn</a></td>
       </tr>
       <tr>
-        <td><a href="#">Project</a></td>
-        <td rowspan="3"> 
-          CEO Cicle,<br>
-          Chittangong,<br>
-          Bangladsh
-        </td>
-        <td><a href="#">Instagram</a></td>
+        
+        <td><a href="#services">Services</a></td>
       </tr>
       <tr>
-        <td><a href="#">Contact</a></td>
+        <td><a href="#project">Project</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="#testimonials">Testimonials</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="#contact">Contact</a></td>
       </tr>
     </table>
   </footer>
   <h6>2021 - kim cassalaxe | Desingned by Cassalaxe</h6>
+  <script src="/js/script.js"></script>
 </body>
 </html>
 
